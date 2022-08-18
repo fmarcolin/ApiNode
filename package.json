@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rimraf dist && tsc"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/fmarcolin/ApiNode/issues"
   },
-  "homepage": "https://github.com/fmarcolin/ApiNode#readme"
+  "homepage": "https://github.com/fmarcolin/ApiNode#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  }
 }
